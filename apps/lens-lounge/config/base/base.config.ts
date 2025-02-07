@@ -3,7 +3,7 @@ import { Injectable, InternalServerErrorException } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { EnvNamesEnums } from '../enums/env-names.enums';
 import { ThrottleTypes } from '../throttle/types/throttle.types';
-import { VersionType } from './types /version-type';
+import { VersionType } from './types/version-type';
 
 @Injectable()
 export class BaseConfig {
