@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/series-lounge/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/series-lounge/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/series-lounge",
+  "projects": {
+    "series-lounge": {
+      "type": "application",
+      "root": "apps/series-lounge",
+      "entryFile": "main",
+      "sourceRoot": "apps/series-lounge/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/series-lounge/tsconfig.app.json"
+      }
+    }
+  }
+}
